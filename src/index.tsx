@@ -1,5 +1,2 @@
-import { useFormatMoney } from "./useFormatMoney";
-
-export {
-  useFormatMoney
-}
+export { default as useFormatMoney } from "./useFormatMoney";
+export { default as useZipCode } from './useZipCode'
