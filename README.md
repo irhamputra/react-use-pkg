@@ -1,4 +1,4 @@
-# react-use-pkg
+# react-use-pkg 📦✨
 
 > The custom react hooks library
 
@@ -12,11 +12,10 @@ or
 yarn add react-use-pkg
 ```
 
+### [See documentation](https://github.com/irhamputra/react-use-pkg.wiki.git)
+
 ### Lists
 * useFormatMoney: convert number to Intl format number.  [list of currency and locale](http://example.com)
-```
-setFormat(number, locale, currency)
-```
 * useZipCode: returns international Zip Code number (WIP)
 ## License
 
