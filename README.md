@@ -13,7 +13,10 @@ yarn add react-use-pkg
 ```
 
 ### Lists
-* useFormatMoney: convert number to Intl format number. setFormat(number, locale, currency) [list of currency and locale](http://example.com)
+* useFormatMoney: convert number to Intl format number.  [list of currency and locale](http://example.com)
+```
+setFormat(number, locale, currency)
+```
 * useZipCode: returns international Zip Code number (WIP)
 ## License
 
