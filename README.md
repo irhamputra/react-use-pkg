@@ -12,7 +12,7 @@ or
 yarn add react-use-pkg
 ```
 
-### [See documentation](https://github.com/irhamputra/react-use-pkg.wiki.git)
+### [See documentation](https://github.com/irhamputra/react-use-pkg/wiki)
 
 ### Lists
 * useFormatMoney: convert number to Intl format number.  [list of currency and locale](http://example.com)
