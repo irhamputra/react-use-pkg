@@ -8,29 +8,15 @@
 
 ```bash
 npm install --save react-use-pkg
+or
+yarn add react-use-pkg
 ```
 
-## Usage
-
-```tsx
-import * as React from 'react'
-
-import { useMyHook } from 'react-use-pkg'
-
-const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
-```
-
+### Lists
+* useFormatMoney: convert number to Intl format number. setFormat(number, locale, currency) [list of currency and locale](http://example.com)
+* useZipCode: returns international Zip Code number (WIP)
 ## License
 
 MIT © [irhamputra](https://github.com/irhamputra)
 
 ---
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
