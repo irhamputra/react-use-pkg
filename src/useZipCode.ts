@@ -2,21 +2,32 @@ import { useCallback, useState } from "react";
 import { fetcher } from "./utils";
 
 const useZipCode = () => {
-  const [zipCode, setState] = useState<Payload | null>(null);
+  const [data, setData] = useState<Payload | null>(null);
 
-  const setZipCode = useCallback((country: string, code?: number) => {
+  const setCodeCountry = useCallback((countryCode: string, code?: number) => {
     try {
       const baseUrl = "http://api.zippopotam.us";
 
-      fetcher(`${baseUrl}/${country}${code ? `/${code}` : null}`).then(
-        (data) => {
-          setState(data);
+      fetcher(
+        `https://cors-anywhere.herokuapp.com/${baseUrl}/${countryCode}${
+          code && `/${code}`
+        }`,
+        {
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-      );
-    } catch (e) {}
+      ).then((data) => {
+        console.log(data);
+        setData(data);
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
 
-  return [zipCode, setZipCode];
+  return [data, setCodeCountry];
 };
 
 interface Place {
