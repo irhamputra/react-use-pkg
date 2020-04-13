@@ -15,7 +15,7 @@ const useFormatMoney = () => {
     []
   );
 
-  return [value, setFormat];
+  return { value, setFormat };
 };
 
 export default useFormatMoney;

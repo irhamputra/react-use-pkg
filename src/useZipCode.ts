@@ -4,7 +4,7 @@ import { fetcher } from "./utils";
 const useZipCode = () => {
   const [data, setData] = useState<Payload | null>(null);
 
-  const setCodeCountry = useCallback((countryCode: string, code?: number) => {
+  const setCodeCountry = useCallback((countryCode: string, code?: string) => {
     try {
       const baseUrl = "http://api.zippopotam.us";
 
@@ -19,7 +19,6 @@ const useZipCode = () => {
           },
         }
       ).then((data) => {
-        console.log(data);
         setData(data);
       });
     } catch (e) {
@@ -27,7 +26,7 @@ const useZipCode = () => {
     }
   }, []);
 
-  return [data, setCodeCountry];
+  return { data, setCodeCountry };
 };
 
 interface Place {
@@ -37,7 +36,7 @@ interface Place {
   latitude: string;
 }
 
-interface Payload {
+export interface Payload {
   countryAbbreviation: string;
   places: Place[];
   country: string;

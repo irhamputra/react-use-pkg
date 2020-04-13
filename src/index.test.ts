@@ -1,29 +1,51 @@
-import { useMyHook } from './'
+import { useFetchWithCORS, useFormatMoney, useZipCode } from "./";
 import { renderHook, act } from "@testing-library/react-hooks";
 
-// mock timer using jest
-jest.useFakeTimers();
+describe("useFormatMoney", () => {
+  it("should be formatted", () => {
+    const { result } = renderHook(() => useFormatMoney());
 
-describe('useMyHook', () => {
-  it('updates every second', () => {
-    const { result } = renderHook(() => useMyHook());
+    expect(result.current.value).toBe("");
+    expect(typeof result.current.value).toBe("string");
 
-    expect(result.current).toBe(0);
-
-    // Fast-forward 1sec
     act(() => {
-      jest.advanceTimersByTime(1000);
+      result.current.setFormat(2000, "de", "EUR");
     });
 
-    // Check after total 1 sec
-    expect(result.current).toBe(1);
+    expect(typeof result.current.value).toBe("string");
+  });
+});
 
-    // Fast-forward 1 more sec
+describe("useZipCode", () => {
+  it("should be received data", async () => {
+    const { result, waitForNextUpdate } = renderHook(() => useZipCode());
+
+    expect(result.current.data).toBeNull();
+
     act(() => {
-      jest.advanceTimersByTime(1000);
+      result.current.setCodeCountry("de", "04177");
     });
 
-    // Check after total 2 sec
-    expect(result.current).toBe(2);
-  })
-})
+    await waitForNextUpdate();
+
+    expect(typeof result.current.data).toBe("object");
+    expect(result.current.data).toMatchObject({ country: "Germany" });
+  });
+});
+
+describe("useFetchWithCORS", () => {
+  it("should fetch without error", async () => {
+    const { result, waitForNextUpdate } = renderHook(() => useFetchWithCORS());
+
+    expect(typeof result.current.data).toBe("string");
+    expect(result.current.data).toBe("");
+
+    act(() => {
+      result.current.setURI("http://api.zippopotam.us/de/04177");
+    });
+
+    await waitForNextUpdate();
+
+    expect(result.current.data).toMatchObject({ country: "Germany" });
+  });
+});
