@@ -7,7 +7,7 @@ react-use-pkg 📦✨
 <br/>
 </h1>
 
-<blockquote>The unusual custom react hooks library</blockquote>
+<small>The unusual custom react hooks library</small>
 
 <sup>
 <a href="https://img.shields.io/npm/v/react-use-pkg.svg">
