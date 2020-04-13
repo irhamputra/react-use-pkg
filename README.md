@@ -11,8 +11,11 @@ react-use-pkg
 <small>The unusual custom react hooks library</small>
 
 <sup>
-<a href="https://img.shields.io/npm/v/react-use-pkg.svg">
+<a href="https://www.npmjs.com/package/react-use-pkg">
 <img src="https://img.shields.io/npm/v/react-use-pkg.svg" alt="npm package" />
+</a>
+<a href="#">
+<img src="https://travis-ci.com/irhamputra/react-use-pkg.svg?branch=master" alt="npm package" />
 </a>
 </sup>
 </div>
