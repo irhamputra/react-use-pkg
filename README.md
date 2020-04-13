@@ -32,6 +32,8 @@ yarn add react-use-pkg
 - useFormatMoney — convert number to Intl format number.
 - useZipCode — return JSON data of international Zip Code number
 - useFetchWithCORS — enable CORS in client if you don't have access to server
+- useToggle — toggle state easily
+- useWillUnmount - Hook for ComponentWillUnmount lifecycle
 
 #### Work in progress
 
