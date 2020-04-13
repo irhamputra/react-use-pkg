@@ -1,8 +1,9 @@
 <div align="center">
 <h1>
 <br/>
+📦✨
 <br/>
-react-use-pkg 📦✨
+react-use-pkg
 <br/>
 <br/>
 </h1>
