@@ -18,8 +18,11 @@ yarn add react-use-pkg
 * useFormatMoney: convert number to Intl format number.  [list of currency and locale](http://example.com)
 * useZipCode: return JSON data of international Zip Code number [list of data](example.com)
 * useFetchWithCORS: enable CORS in client if you don't have access to server
-* useGenerateQRCode: return an image of QRCode (WIP)
-* useDayFormat: convert Dates (WIP)
+
+
+#### Work in progress
+* useGenerateQRCode: return generated QR code as an image
+* useDayFormat: Dates converted
 
 ## License
 

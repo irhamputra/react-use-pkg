@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <h1>useFetchWithCORS</h1>
+      <h1>Test Hooks here</h1>
     </div>
   );
 };

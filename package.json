@@ -1,6 +1,6 @@
 {
   "name": "react-use-pkg",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The custom react hooks library",
   "author": "irhamputra",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "publish": "npm publish"
   },
   "dependencies": {},
   "peerDependencies": {
