@@ -9,7 +9,6 @@ const useFetchWithCORS = () => {
       const newURI = `https://cors-anywhere.herokuapp.com/${url}`;
 
       fetcher(newURI, { mode: "cors" }).then((data) => {
-        console.log(data);
         setData(data);
       });
     } catch (e) {

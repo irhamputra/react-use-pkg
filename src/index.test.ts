@@ -1,4 +1,4 @@
-import { useFetchWithCORS, useFormatMoney, useZipCode } from "./";
+import { useFetchWithCORS, useFormatMoney, useGetUnique, useZipCode } from "./";
 import { renderHook, act } from "@testing-library/react-hooks";
 
 describe("useFormatMoney", () => {
@@ -47,5 +47,22 @@ describe("useFetchWithCORS", () => {
     await waitForNextUpdate();
 
     expect(result.current.data).toMatchObject({ country: "Germany" });
+  });
+});
+
+// TODO: continue testing use-pkg
+
+describe("useGetUnique", () => {
+  it("should fetch without error", async () => {
+    const { result } = renderHook(() => useGetUnique());
+
+    expect(typeof result.current.uniqueArray).toBe("object");
+    expect(result.current.uniqueArray).toEqual([]);
+
+    act(() => {
+      result.current.setArray([1, 1, 3, 4, 3, 3, 8, 6, 7]);
+    });
+
+    expect(result.current.uniqueArray).toEqual([1, 3, 4, 8, 6, 7]);
   });
 });
