@@ -36,7 +36,8 @@ yarn add react-use-pkg
 - useZipCode — return JSON data of international Zip Code number
 - useFetchWithCORS — enable CORS in client if you don't have access to server
 - useToggle — toggle state easily
-- useWillUnmount - Hook for ComponentWillUnmount lifecycle
+- useWillUnmount — Hook for ComponentWillUnmount lifecycle
+- useGetUnique — Hook for getting unique array
 
 #### Work in progress
 
