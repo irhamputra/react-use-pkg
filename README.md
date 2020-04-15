@@ -26,6 +26,7 @@ react-use-pkg
 
 <div align="center">
 <h3>Install</h3>
+
 ```bash
 npm install --save react-use-pkg
 ```
