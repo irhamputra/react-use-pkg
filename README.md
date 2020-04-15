@@ -17,6 +17,9 @@ react-use-pkg
 <a href="#">
 <img src="https://travis-ci.com/irhamputra/react-use-pkg.svg?branch=master" alt="npm package" />
 </a>
+<a href="https://img.shields.io/github/license/irhamputra/react-use-pkg">
+<img src="https://img.shields.io/github/license/irhamputra/react-use-pkg" alt="license" />
+</a>
 </sup>
 </div>
 
