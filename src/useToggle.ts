@@ -1,10 +1,10 @@
-import { useCallback, useState } from "react";
+import * as React from "react";
 
 const useToggle = (initialState: boolean = false) => {
-  const [on, setToggle] = useState(initialState);
+  const [on, setToggle] = React.useState(initialState);
 
-  const reset = useCallback(() => setToggle(initialState), []);
-  const toggle = useCallback(() => setToggle((prevState) => !prevState), []);
+  const reset = React.useCallback(() => setToggle(initialState), []);
+  const toggle = React.useCallback(() => setToggle((prevState) => !prevState), []);
 
   return { on, set: setToggle, reset, toggle };
 };

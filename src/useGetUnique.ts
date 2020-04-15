@@ -1,9 +1,9 @@
-import { useState, useCallback } from "react";
+import * as React from "react";
 
 const useGetUnique = <T>() => {
-  const [uniqueArray, setUniqueArray] = useState<Array<T>>([]);
+  const [uniqueArray, setUniqueArray] = React.useState<Array<T>>([]);
 
-  const setArray = useCallback((value: Array<T>) => {
+  const setArray = React.useCallback((value: Array<T>) => {
     setUniqueArray([...new Set(value)]);
   }, []);
 

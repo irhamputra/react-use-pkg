@@ -1,8 +1,8 @@
-import { useEffect, useCallback } from "react";
+import * as React from "react";
 
 const useWillUnmount = () => {
-  const willUnmount = useCallback((fn: () => void) => {
-    useEffect(() => () => fn && fn(), []);
+  const willUnmount = React.useCallback((fn: () => void) => {
+    React.useEffect(() => () => fn && fn(), []);
   }, []);
 
   return { willUnmount };

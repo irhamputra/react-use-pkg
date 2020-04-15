@@ -1,10 +1,10 @@
-import { useState, useCallback } from "react";
+import * as React from "react";
 import { fetcher } from "./utils";
 
 const useFetchWithCORS = () => {
-  const [data, setData] = useState("");
+  const [data, setData] = React.useState("");
 
-  const setURI = useCallback((url: string) => {
+  const setURI = React.useCallback((url: string) => {
     try {
       const newURI = `https://cors-anywhere.herokuapp.com/${url}`;
 

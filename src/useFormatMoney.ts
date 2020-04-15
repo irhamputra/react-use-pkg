@@ -1,9 +1,9 @@
-import { useState, useCallback } from "react";
+import * as React from "react";
 
 const useFormatMoney = () => {
-  const [value, setValue] = useState<string | number>("");
+  const [value, setValue] = React.useState<string | number>("");
 
-  const setFormat = useCallback(
+  const setFormat = React.useCallback(
     (amount: number, locales: string, currency: string) => {
       const formatMoney = new Intl.NumberFormat(locales, {
         style: "currency",
