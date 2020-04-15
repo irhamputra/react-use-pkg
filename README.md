@@ -23,13 +23,13 @@ react-use-pkg
 </sup>
 </div>
 
-## Install
 
+<div align="center">
+<h3>Install</h3>
 ```bash
 npm install --save react-use-pkg
-or
-yarn add react-use-pkg
 ```
+</div>
 
 ### [See documentation](https://github.com/irhamputra/react-use-pkg/wiki/docs)
 
@@ -41,6 +41,7 @@ yarn add react-use-pkg
 - useToggle — toggle state easily
 - useWillUnmount — Hook for ComponentWillUnmount lifecycle
 - useGetUnique — Hook for getting unique array
+- useAbortController — Hook for cancel promise
 
 #### Work in progress
 
