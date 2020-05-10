@@ -24,9 +24,6 @@ react-use-pkg
 <img src="https://badgen.net/bundlephobia/minzip/react-use-pkg" alt="bundle size" />
 
 <img src="https://badgen.net/npm/dt/react-use-pkg" alt="npm size" />
-
-<img src="https://badgen.net/packagephobia/publish/react-use-pkg" alt="publish package" />
-
 </sup>
 </div>
 
