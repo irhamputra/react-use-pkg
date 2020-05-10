@@ -20,6 +20,8 @@ react-use-pkg
 <a href="https://img.shields.io/github/license/irhamputra/react-use-pkg">
 <img src="https://img.shields.io/github/license/irhamputra/react-use-pkg" alt="license" />
 </a>
+  
+<img src="https://badgen.net/bundlephobia/minzip/react-use-pkg" alt="bundle size" />
 </sup>
 </div>
 
