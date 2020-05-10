@@ -44,11 +44,6 @@ npm install --save react-use-pkg
 - useGetUnique — Hook for getting unique array
 - useAbortController — Hook for cancel promise
 
-#### Work in progress
-
-- useGenerateQRCode — return generated QR code as an image
-- useDayFormat — Dates converted
-
 ## License
 
 MIT © [irhamputra](https://github.com/irhamputra)
