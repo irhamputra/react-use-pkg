@@ -47,6 +47,8 @@ npm install --save react-use-pkg
 - useWillUnmount — Hook for ComponentWillUnmount lifecycle
 - useGetUnique — Hook for getting unique array
 - useAbortController — Hook for cancel promise
+- useLoadScript — Hook for loading external script and embed it
+- useTwitterAvatar — Get your Twitter Avatar Hook
 
 ## License
 

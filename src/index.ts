@@ -6,3 +6,5 @@ export { default as useToggle } from "./useToggle";
 export { default as useWillUnmount } from "./useWillUnmount";
 export { default as useDayFormat } from "./useDayFormat";
 export { default as useGenerateQRCode } from "./useGenerateQRCode";
+export { default as useLoadScript } from "./useLoadScript";
+export { default as useTwitterAvatar } from "./useTwitterAvatar";
